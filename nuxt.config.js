@@ -25,7 +25,10 @@ module.exports = {
   /*
    ** Global CSS https://dev.iviewui.com/articles/1024499044308881408
    */
-  css: ["iview/dist/styles/iview.css"],
+  css: [
+    "iview/dist/styles/iview.css",
+    "@/assets/css/main.css"
+  ],
 
   /*
    ** Plugins to load before mounting the App
