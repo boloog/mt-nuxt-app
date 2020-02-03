@@ -1,58 +1,43 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        mt-nuxt-app
-      </h1>
-      <h2 class="subtitle">
-        Welcome to the iView + Nuxt.js template
-      </h2>
-      <div class="links">
-        <Button type="primary" target="_blank" to="https://nuxtjs.org/">Documentation</Button>
-        <Button target="_blank" to="https://github.com/nuxt/nuxt.js">GitHub</Button>
-        <Button target="_blank" to="https://www.iviewui.com/">iView</Button>
-      </div>
-    </div>
-  </section>
+  <div class="page-index">
+    <nuxt-link to="/" class="wrap-ace"><img src="//img12.360buyimg.com/img/jfs/t1/103258/1/9333/414678/5e0ef879E069729fd/c2e20d14f533f622.png.webp" alt=""></nuxt-link>
+      <Row :gutter="10">
+      <Col span="4">
+        <common-emenu />
+      </Col>
+      <Col span="12">
+        <div class="slide">
+          <slider />
+        </div>
+      </Col>
+      <Col span="4">
+        <div class="slide-right">
+          <slider :autoplay-speed="4000"/>
+        </div>
+      </Col>
+      <Col span="4">
+        <user-life />
+      </Col>
+    </Row>
+    <Row span="24">
+      33333333333
+    </Row>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import CommonEmenu from '@/components/index/menu.vue'
+import Slider from '@/components/index/slider.vue'
+import userLife from '@/components/index/life.vue'
 export default {
   components: {
-    Logo
+    CommonEmenu,
+    Slider,
+    userLife
   }
 }
 </script>
 
 <style lang="scss">
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links {
-  padding-top: 15px;
-}
-}
+  @import '@/assets/css/index/index.scss';
 </style>

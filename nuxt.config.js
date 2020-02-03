@@ -57,7 +57,6 @@ module.exports = {
       //     exclude: /(node_modules)/
       //   })
       // }
-    },
-    cache: true // 启动缓存 https://zh.nuxtjs.org/api/configuration-build#cache
+    }
   }
 };
