@@ -6,20 +6,25 @@
   height: 100vh;
   margin: 0;
 }
-body{
-  margin: 0;
-  padding: 0;
-}
-body *{
+
+body {
   margin: 0;
   padding: 0;
 }
 
-footer{
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
   text-align: center;
 }
 
-a, a:hover, a:focus, a:visited{
+a,
+a:hover,
+a:focus,
+a:visited {
   color: #e1251b;
 }
 
@@ -28,16 +33,19 @@ a, a:hover, a:focus, a:visited{
   height: 218px;
 }
 
-.page-enter-active, .page-leave-active{
+.page-enter-active,
+.page-leave-active {
   transition: opacity .5s
 }
-.page-enter, .page-leave-active{
+
+.page-enter,
+.page-leave-active {
   opacity: 0
 }
 
-.ivu-layout{
+/* .ivu-layout{
     background: #f4f4f4;
-}
+} */
 .ivu-input-search {
   background-color: #e1251b !important;
 }
