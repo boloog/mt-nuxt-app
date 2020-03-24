@@ -2,21 +2,20 @@
   <Layout>
     <Header><top-header /></Header>
     <Content><nuxt /></Content>
-    <Footer>Footer</Footer>
+    <Footer style="height: 100%"><comFooter /></Footer>
   </Layout>
 </template>
 
 <script>
-import topHeader from '@/components/public/header/'
+import topHeader from "@/components/public/header/";
+import comFooter from "@/components/public/footer/";
 export default {
   components: {
-    topHeader
+    topHeader,
+    comFooter
   }
-
-}
+};
 </script>
 <style lang="scss">
-  @import '@/assets/css/public/layout.scss';
-
-
+@import "@/assets/css/public/layout.scss";
 </style>

@@ -2,9 +2,6 @@
   <div class="nav-wrap">
     <ul class="nav">
       <li>
-        <nuxt-link to="/register">免费注册</nuxt-link>
-      </li>
-      <li>
         <nuxt-link to="/my">我的订单</nuxt-link>
       </li>
 

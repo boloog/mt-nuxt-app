@@ -1,5 +1,4 @@
-const pkg = require('./package')
-
+const pkg = require("./package");
 
 module.exports = {
   mode: "universal",
@@ -25,10 +24,7 @@ module.exports = {
   /*
    ** Global CSS https://dev.iviewui.com/articles/1024499044308881408
    */
-  css: [
-    "iview/dist/styles/iview.css",
-    "@/assets/css/main.css"
-  ],
+  css: ["iview/dist/styles/iview.css", "@/assets/css/main.css"],
 
   /*
    ** Plugins to load before mounting the App
@@ -36,14 +32,15 @@ module.exports = {
   plugins: ["@/plugins/iview"],
 
   /*
-   ** Nuxt.js modules
+   ** Nuxt.js modules  添加配置 axios 全局配置 + 代理 npm i @nuxtjs/axios @nuxtjs/proxy -D
    */
-  modules: [],
+  modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
 
   /*
    ** Build configuration https://zh.nuxtjs.org/api/configuration-build#extend
    */
   build: {
+    vendor: ["axios"],
     /*
      ** You can extend webpack config here
      */
